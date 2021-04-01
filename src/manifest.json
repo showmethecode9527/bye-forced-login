@@ -1,0 +1,56 @@
+{
+  "name": "f_ck-csdn",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "f_ck csdn",
+  "icons": {
+    "16": "img/f_ck-csdn_16.png",
+    "48": "img/f_ck-csdn_48.png",
+    "128": "img/f_ck-csdn_128.png"
+  },
+  // "default_locale": "zh_CN",
+  // "background": {
+  //   "persistent": false,
+  //   // 一般，背景页不需要任何HTML，仅仅需要js文件
+  //   // 浏览器的扩展系统会自动根据上面scripts字段指定的所有js文件自动生成背景页
+  //   "scripts": ["js/reload-css.js", "js/background.js"]
+  //   // 如果您的确需要自己的背景页，可以使用page字段
+  //   // "page": "background.html"
+  // },
+  // 浏览器右上角图标设置，browser_action、page_action、app必须三选一
+  "browser_action": {
+    "default_title": "f_ck-csdn",
+    "default_icon": "img/f_ck-csdn_19.png",
+    "default_popup": "popup.html"
+  },
+  // 注入到页面的 js
+  "content_scripts": [
+    {
+      "matches": ["https://blog.csdn.net/*"],
+      // "css": ["css/content.css"],
+      "js": ["js/content.js"],
+      //  "document_start"，这些文件将在 css 中指定的文件之后，但是在所有其他 DOM 构造或脚本运行之前插入。
+      //  "document_end"，文件将在 DOM 完成之后立即插入，但是在加载子资源（如图像与框架）之前插入。
+      "run_at": "document_end"
+    }
+  ],
+  // "web_accessible_resources": ["js/inject.js"],
+  "permissions": [
+    // "tabs",
+    // "notifications",
+    // "storage",
+    // "webRequest",
+    "contextMenus", // 右键菜单
+    "http://*/*", // 可以通过executeScript或者insertCSS访问的网站
+    "https://*/*" // 可以通过executeScript或者insertCSS访问的网站
+  ]
+  // "homepage_url": "http://39.108.89.230"
+  // // Chrome 40 以前的扩展配置页写法
+  // "options_page": "html/options.html",
+  // // Chrome 40 以后的扩展配置页写法, 如果两个都写, 新版只认后面的
+  // "options_ui": {
+  //   "page": "html/options.html",
+  //   // 添加一些默认的样式, 建议使用
+  //   "chrome_style": true
+  // }
+}

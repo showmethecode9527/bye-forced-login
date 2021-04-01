@@ -1,0 +1,29 @@
+{
+  "name": "f_ck-csdn",
+  "version": "1.0.0",
+  "description": "chrome extension, f*ck csdn forced login dialog",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showmethecode9527/f_ck-csdn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/showmethecode9527/f_ck-csdn/issues"
+  },
+  "homepage": "https://github.com/showmethecode9527/f_ck-csdn#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
