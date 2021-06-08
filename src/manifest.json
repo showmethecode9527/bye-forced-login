@@ -1,12 +1,12 @@
 {
-  "name": "f_ck-csdn",
+  "name": "bye-forced-login",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "f_ck csdn",
+  "description": "bye forced login",
   "icons": {
-    "16": "img/f_ck-csdn_16.png",
-    "48": "img/f_ck-csdn_48.png",
-    "128": "img/f_ck-csdn_128.png"
+    "16": "img/bye-forced-login_16.png",
+    "48": "img/bye-forced-login_48.png",
+    "128": "img/bye-forced-login_128.png"
   },
   // "default_locale": "zh_CN",
   // "background": {
@@ -19,14 +19,17 @@
   // },
   // 浏览器右上角图标设置，browser_action、page_action、app必须三选一
   "browser_action": {
-    "default_title": "f_ck-csdn",
-    "default_icon": "img/f_ck-csdn_19.png",
+    "default_title": "bye-forced-login",
+    "default_icon": "img/bye-forced-login_19.png",
     "default_popup": "popup.html"
   },
   // 注入到页面的 js
   "content_scripts": [
     {
-      "matches": ["https://blog.csdn.net/*"],
+      "matches": [
+        "https://blog.csdn.net/*",
+        "https://www.zhihu.com/*"
+      ],
       // "css": ["css/content.css"],
       "js": ["js/content.js"],
       //  "document_start"，这些文件将在 css 中指定的文件之后，但是在所有其他 DOM 构造或脚本运行之前插入。
