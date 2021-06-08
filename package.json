@@ -1,6 +1,6 @@
 {
   "name": "bye-forced-login",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "chrome extension, kill the forced login dialog",
   "main": "index.js",
   "scripts": {
