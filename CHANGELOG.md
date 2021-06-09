@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/showmethecode9527/bye-forced-login/compare/v1.2.0...v1.2.1) (2021-06-09)
+
+
+### Bug Fixes
+
+* 修复 csdn 页面清除自动登录无效的 bug ([9c8bb8c](https://github.com/showmethecode9527/bye-forced-login/commit/9c8bb8c0d299892af1fe9b205db5cb6bc88db328))
+
 ## 1.2.0 (2021-06-08)
 
 
