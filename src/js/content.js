@@ -50,19 +50,20 @@ function clearForcedLoginDialog () {
       }
     } else {
       // csdn, 只要发现弹窗就删除
-      // 因为如果用户手动点击登录, 则不会出现弹窗, 而是直接跳转到登录页
+      // 因为如果用户手动点击登录是不会出现弹窗的, 而是直接跳转到登录页
       removeEl(document.querySelector(selector))
     }
   })
 }
 
+// 删除指定的 html 元素节点
 function removeEl (el) {
   let result = false
   try {
     el.parentNode.removeChild(el)
     result = false
   } catch (e) {
-    console.log(e)
+    // console.log(e)
   }
 
   return result
