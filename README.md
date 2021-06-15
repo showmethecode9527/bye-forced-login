@@ -7,6 +7,8 @@ Chrome 扩展，去除某些网站的强制登录提示。
 
 ![csdn](./imgs/001.png)
 ![zhihu](./imgs/002.png)
+![zhihu](./imgs/003.png)
+
 
 ## 支持的网站
 
@@ -20,6 +22,11 @@ Chrome 扩展，去除某些网站的强制登录提示。
 2. 打开 Chrome，地址栏输入 `chrome://extensions/` 进入到扩展程序页面
 3. 开启开发者模式（页面右上角）
 4. 点击左上角“加载已解压的扩展程序”，选择第 1 步下载的 `src` 目录
+
+## 更新日志
+
+[CHANGELOG](./CHANGELOG.md)
+
 
 ## License
 
