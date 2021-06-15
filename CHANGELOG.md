@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/showmethecode9527/bye-forced-login/compare/v1.2.1...v1.3.0) (2021-06-15)
+
+
+### Features
+
+* **zhihu:** 新增 zhuanlan.zhihu.com 支持 ([17fd3f6](https://github.com/showmethecode9527/bye-forced-login/commit/17fd3f62a8fd8ea7eb3f6d99ea85b5ff148b6772))
+
 ### [1.2.1](https://github.com/showmethecode9527/bye-forced-login/compare/v1.2.0...v1.2.1) (2021-06-09)
 
 
