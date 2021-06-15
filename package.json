@@ -4,6 +4,7 @@
   "description": "chrome extension, kill the forced login dialog",
   "main": "index.js",
   "scripts": {
+    "commit": "cz",
     "release": "standard-version"
   },
   "repository": {
@@ -18,12 +19,15 @@
   },
   "homepage": "https://github.com/showmethecode9527/bye-forced-login#readme",
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.28.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "husky": "^6.0.0",
     "standard-version": "^9.1.1"
   },
   "config": {
