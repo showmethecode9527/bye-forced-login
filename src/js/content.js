@@ -39,8 +39,7 @@ function clearForcedLoginDialog () {
     if (selector === '.Modal-wrapper') {
       // 当前是 zhihu 的, 则只删除一次, 因为用户可能会手动点击登录
       if (!zhihuFirstEnforcedLoginDone) {
-        removeEl(document.querySelector(selector))
-        zhihuFirstEnforcedLoginDone = true
+        zhihuFirstEnforcedLoginDone = removeEl(document.querySelector(selector))
 
         // zhihu 自动弹出的登录, 需要取消溢出隐藏
         const rootEl = document.documentElement
@@ -61,7 +60,7 @@ function removeEl (el) {
   let result = false
   try {
     el.parentNode.removeChild(el)
-    result = false
+    result = true
   } catch (e) {
     // console.log(e)
   }

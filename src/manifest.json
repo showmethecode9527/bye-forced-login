@@ -2,7 +2,7 @@
   "name": "bye-forced-login",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "bye forced login",
+  "description": "去除某些网站（如：csdn, zhihu 等）打开后自动弹出的登录弹窗。",
   "icons": {
     "16": "img/bye-forced-login_16.png",
     "48": "img/bye-forced-login_48.png",
