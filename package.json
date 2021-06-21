@@ -1,7 +1,7 @@
 {
   "name": "bye-forced-login",
   "version": "1.3.2",
-  "description": "chrome extension, kill the forced login dialog",
+  "description": "Chrome 扩展，去除某些网站（如：csdn, zhihu 等）打开后自动弹出的登录弹窗。",
   "main": "index.js",
   "scripts": {
     "commit": "cz",
@@ -28,11 +28,17 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "husky": "^6.0.0",
+    "jsonfile": "^6.1.0",
     "standard-version": "^9.1.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "precommit": "node sync-version/index.js"
     }
   }
 }

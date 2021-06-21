@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "icons": {
+    "16": "img/bye-forced-login_16.png",
+    "48": "img/bye-forced-login_48.png",
+    "128": "img/bye-forced-login_128.png"
+  },
+  "browser_action": {
+    "default_title": "bye-forced-login",
+    "default_icon": "img/bye-forced-login_19.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://blog.csdn.net/*",
+        "https://www.zhihu.com/*",
+        "https://zhuanlan.zhihu.com/*",
+        "https://*.zhihu.com/*"
+      ],
+      "js": ["js/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
